@@ -1,0 +1,106 @@
+﻿@{
+    ViewData["Title"] = "Delhi";
+    var abc = ViewBag.TenderTdOdd;
+    var def = ViewBag.TenderTdEven;
+    var linkOdd = ViewBag.TenderaOdd;
+    var linkEven = ViewBag.TenderaEven;
+    int k = 0;
+    int l = 0;
+}
+
+<h1>List of Tendends & Corrigendum</h1>
+
+<div class="pagetitle">
+    <h1>Haryana</h1>
+    <nav>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-action="Delhi" asp-controller="Home">Home</a></li>
+            <li class="breadcrumb-item active">Delhi</li>
+        </ol>
+    </nav>
+</div><!-- End Page Title -->
+
+<section class="section">
+    <div class="row">
+        <div class="col-lg-12">
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Tenders for Delhi</h5>
+                    <p></p>
+
+                    <!-- Table with stripped rows -->
+                    <table class="table datatable">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Title</th>
+                                <th scope="col">Reference No</th>
+                                <th scope="col">Closing Date</th>
+                                <th scope="col">Bid Opening Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            @for (int i = 0; i < ViewBag.TenderOdd.Count; i++)
+                            {
+
+                                <tr>
+                                    <th scope="row">@Convert.ToInt32(i + 1)</th>
+                                    @*@foreach (var textodd in ViewBag.TenderOdd[i].InnerText)
+                                        {
+                                            <td>@textodd</td>
+                                        }*@
+
+                                    @for (int j = 0; j < 4; j++, k++)
+                                    {
+
+                                        if (j == 0)
+                                        {
+                                            <td><a href="@linkOdd[i]" target="_blank">@abc[k].InnerText</a></td>
+                                        }
+                                        else
+                                        {
+                                            <td>@abc[k].InnerText</td>
+                                        }
+                                    }
+                                    @*@ViewBag.TenderOdd[i].InnerHtml.Trim()*@
+                                </tr>
+                            }
+                            @for (int i = 0; i < ViewBag.TenderEven.Count; i++)
+                            {
+
+                                <tr>
+                                    <th scope="row">@Convert.ToInt32(i + 1 + ViewBag.TenderOdd.Count)</th>
+                                    @*@foreach (var textodd in ViewBag.TenderOdd[i].InnerText)
+                                        {
+                                            <td>@textodd</td>
+                                        }*@
+
+                                    @for (int j = 0; j < 4; j++, l++)
+                                    {
+
+                                        if (j == 0)
+                                        {
+                                            <td><a href="@linkEven[i]" target="_blank">@def[l].InnerText</a></td>
+                                        }
+                                        else
+                                        {
+                                            <td>@def[l].InnerText</td>
+                                        }
+
+
+                                    }
+                                    @*@ViewBag.TenderOdd[i].InnerHtml.Trim()*@
+                                </tr>
+                            }
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
