@@ -382,10 +382,10 @@ namespace WebScrapping.Controllers
             ViewBag.TenderaEven = aEvenN;
             return View();
         }
-        public IActionResult Puducherry()
+        public IActionResult Central()
         {
             HtmlWeb web = new HtmlWeb();
-            HtmlDocument doc = web.Load("https://pudutenders.gov.in/nicgep/app");
+            HtmlDocument doc = web.Load("https://eprocure.gov.in/eprocure/app");
             var trOdd = doc.DocumentNode.SelectNodes("//table[@class='list_table']//tr[@class='odd']").ToList();
             var trEven = doc.DocumentNode.SelectNodes("//table[@class='list_table']//tr[@class='even']").ToList();
             var tdOdd = doc.DocumentNode.SelectNodes("//table[@class='list_table']//tr[@class='odd']//td").ToList();
@@ -403,13 +403,13 @@ namespace WebScrapping.Controllers
             {
                 // Get the value of the HREF attribute
                 string hrefValue = link.GetAttributeValue("href", string.Empty).Split(new[] { "component=" }, StringSplitOptions.None)[1].Replace("amp;", "");
-                aOddN.Add("https://pudutenders.gov.in/nicgep/app?component=" + hrefValue);
+                aOddN.Add("https://eprocure.gov.in/eprocure/app?component=" + hrefValue);
             }
             foreach (HtmlNode link in aEven)
             {
                 // Get the value of the HREF attribute
                 string hrefValue = link.GetAttributeValue("href", string.Empty).Split(new[] { "component=" }, StringSplitOptions.None)[1].Replace("amp;", "");
-                aEvenN.Add("https://pudutenders.gov.in/nicgep/app?component=" + hrefValue);
+                aEvenN.Add("https://eprocure.gov.in/eprocure/app?component=" + hrefValue);
             }
             ViewBag.TenderaOdd = aOddN;
             ViewBag.TenderaEven = aEvenN;
