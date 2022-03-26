@@ -126,3 +126,16 @@ C:\Users\SandhiS\Desktop\WebScrapping\WebScrapping\obj\Release\net5.0\WebScrappi
 C:\Users\SandhiS\Desktop\WebScrapping\WebScrapping\obj\Release\net5.0\ref\WebScrapping.dll
 C:\Users\SandhiS\Desktop\WebScrapping\WebScrapping\obj\Release\net5.0\WebScrapping.pdb
 C:\Users\SandhiS\Desktop\WebScrapping\WebScrapping\obj\Release\net5.0\WebScrapping.genruntimeconfig.cache
+C:\Users\SandhiS\Desktop\WebScrapping\WebScrapping\obj\Release\net5.0\Razor\Views\Home\Jharkhand.cshtml.g.cs
+C:\Users\SandhiS\Desktop\WebScrapping\WebScrapping\obj\Release\net5.0\Razor\Views\Home\Odisha.cshtml.g.cs
+C:\Users\SandhiS\Desktop\WebScrapping\WebScrapping\obj\Release\net5.0\Razor\Views\Home\Sikkim.cshtml.g.cs
+C:\Users\SandhiS\Desktop\WebScrapping\WebScrapping\obj\Release\net5.0\Razor\Views\Home\WB.cshtml.g.cs
+C:\Users\SandhiS\Desktop\WebScrapping\WebScrapping\obj\Release\net5.0\Razor\Views\Home\Arunachal.cshtml.g.cs
+C:\Users\SandhiS\Desktop\WebScrapping\WebScrapping\obj\Release\net5.0\Razor\Views\Home\Assam.cshtml.g.cs
+C:\Users\SandhiS\Desktop\WebScrapping\WebScrapping\obj\Release\net5.0\Razor\Views\Home\BE.cshtml.g.cs
+C:\Users\SandhiS\Desktop\WebScrapping\WebScrapping\obj\Release\net5.0\Razor\Views\Home\Manipur.cshtml.g.cs
+C:\Users\SandhiS\Desktop\WebScrapping\WebScrapping\obj\Release\net5.0\Razor\Views\Home\Meghalaya.cshtml.g.cs
+C:\Users\SandhiS\Desktop\WebScrapping\WebScrapping\obj\Release\net5.0\Razor\Views\Home\Mizoram.cshtml.g.cs
+C:\Users\SandhiS\Desktop\WebScrapping\WebScrapping\obj\Release\net5.0\Razor\Views\Home\Nagaland.cshtml.g.cs
+C:\Users\SandhiS\Desktop\WebScrapping\WebScrapping\obj\Release\net5.0\Razor\Views\Home\Tripura.cshtml.g.cs
+C:\Users\SandhiS\Desktop\WebScrapping\WebScrapping\obj\Release\net5.0\Razor\Views\Home\_Error.cshtml.g.cs
